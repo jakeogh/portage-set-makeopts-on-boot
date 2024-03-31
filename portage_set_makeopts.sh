@@ -8,7 +8,6 @@ set -o pipefail
 target="/etc/portage/makeopts.conf"
 
 cores=$(nproc)
-
 if [ "${cores}" -le 2 ];
 then
     _cores="${cores}"
